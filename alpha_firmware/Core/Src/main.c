@@ -33,6 +33,13 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define PARSING 1
+#define SET_GAIN 2
+#define SET_TRIG_LEVEL 3
+#define READING 4
+#define READING_TRIG_mode 5
+#define READING_TRACER_mode 6
+#define SENDING 7
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -98,13 +105,53 @@ int main(void)
   MX_SPI1_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-
+  uint8_t mode = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  switch(mode) {
+		  case PARSING:
+			  //Parser();
+			  break;
+
+		  case SET_TRIG_LEVEL:
+			  //SetTrigLevel();
+			  break;
+
+		  case SET_GAIN:
+			  //SetGain();
+			  break;
+
+		  case READING: {
+			  //ReadData();
+			  /*{
+			 while(noTrigger) {
+			 	 read()
+			 }
+			 }*/
+			  mode = SENDING;
+			  break;
+		  }
+
+		  case READING_TRIG_mode: {
+			  //ReadData();
+			  mode = SENDING;
+			  break;
+		  }
+
+		  case READING_TRACER_mode: {
+		  	  //ReadData();
+		  	  mode = SENDING;
+		  	  break;
+		  }
+
+		  case SENDING:
+
+			  break;
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
