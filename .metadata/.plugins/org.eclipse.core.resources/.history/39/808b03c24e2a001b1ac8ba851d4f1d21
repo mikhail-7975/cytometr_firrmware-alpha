@@ -400,6 +400,18 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
  void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 	data_part_idx += is_triggered;
 	memcpy(&Data_buffer[data_part_idx * DMA_half_buf_size], &DMA_buffer[DMA_midIdx], DMA_half_buf_size * sizeof(uint16_t));
+
+	//For debug
+	/*if(data_part_idx > 3) {
+			HAL_ADC_Stop_DMA(&hadc1);
+			uint16_t trig_idx = 0;
+			for(int i = 0; i < 1000; i++) {
+				if(Data_buffer[i] > trigger_level)
+					trig_idx = i;
+			}
+		}*/
+
+
 	if(data_part_idx >= number_half_bufSize) {
 		HAL_ADC_Stop_DMA(&hadc1);
 		status = status_SENDING_Data;
@@ -409,6 +421,18 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc) {
 	data_part_idx += is_triggered;
 	memcpy(&Data_buffer[data_part_idx * DMA_half_buf_size], &DMA_buffer, DMA_half_buf_size * sizeof(uint16_t));
+
+	//For debug
+	/*if(data_part_idx > 3) {
+		HAL_ADC_Stop_DMA(&hadc1);
+		uint16_t trig_idx = 0;
+		for(int i = 0; i < 1000; i++) {
+			int a = Data_buffer[i];
+			if(a > trigger_level)
+				trig_idx = i;
+		}
+	}*/
+
 	if(data_part_idx >= number_half_bufSize) {
 		HAL_ADC_Stop_DMA(&hadc1);
 		status = status_SENDING_Data;

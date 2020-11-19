@@ -1,14 +1,11 @@
-14:37:28 **** Incremental Build of configuration Debug for project alpha_firmware ****
+16:24:37 **** Incremental Build of configuration Debug for project alpha_firmware ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
-     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
-                   ^~~~~~~~~~~~~~~
-                   HAL_SPI_Transmit_IT
-../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
-     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
-             ^~~
+../Core/Src/main.c:159:5: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_lenth * sizeof(uint16_t));
+     ^~~~~~~~~~~~~~~
+     HAL_SPI_Transmit_IT
 arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: alpha_firmware.elf
  
@@ -16,7 +13,7 @@ arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
 arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
 arm-none-eabi-size   alpha_firmware.elf 
    text	   data	    bss	    dec	    hex	filename
-  33628	    392	   6152	  40172	   9cec	alpha_firmware.elf
+  33724	    392	   8152	  42268	   a51c	alpha_firmware.elf
 Finished building: default.size.stdout
  
 Finished building: alpha_firmware.bin
@@ -24,5 +21,5 @@ Finished building: alpha_firmware.bin
 Finished building: alpha_firmware.list
  
 
-14:37:29 Build Finished. 0 errors, 2 warnings. (took 1s.9ms)
+16:24:39 Build Finished. 0 errors, 1 warnings. (took 1s.499ms)
 
