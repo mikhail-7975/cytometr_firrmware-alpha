@@ -33,13 +33,25 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define True 1
+#define False 0
+
+#define Data_buf_size 1000
+#define DMA_buf_size 40
+#define DMA_half_buf_size (DMA_buf_size / 2)
+#define number_half_bufSize (Data_buf_size / DMA_half_buf_size)
+
+#define status_reading 10
+#define status_SENDING_Data 11
+#define status_doNothing 12
+
 #define PARSING 1
 #define SET_GAIN 2
 #define SET_TRIG_LEVEL 3
 #define READING 4
 #define READING_TRIG_mode 5
 #define READING_TRACER_mode 6
-#define SENDING 7
+#define SENDING_Data 7
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -69,7 +81,22 @@ static void MX_SPI1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+uint16_t DMA_buffer[DMA_buf_size];
+uint16_t Data_buffer[Data_buf_size];
+uint8_t DMA_midIdx = DMA_half_buf_size;
+uint8_t is_triggered = 0;
+uint8_t data_req = False;
+uint8_t data_resp = False;
+uint8_t status = status_doNothing;
 
+
+uint8_t data_part_idx = 0;
+
+uint8_t mode = 0;
+uint8_t settings_changed = False;
+uint8_t ready_to_send = False;
+uint16_t adc_value = 0;
+uint16_t trigger_level = 3700;
 /* USER CODE END 0 */
 
 /**
@@ -105,53 +132,34 @@ int main(void)
   MX_SPI1_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-  uint8_t mode = 0;
+
+
+  HAL_ADCEx_Calibration_Start(&hadc1);
+  HAL_ADC_Start(&hadc1);
+  //uint16_t gain = 0, new_gain = 0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  switch(mode) {
-		  case PARSING:
-			  //Parser();
-			  break;
+	  if (settings_changed) {
 
-		  case SET_TRIG_LEVEL:
-			  //SetTrigLevel();
-			  break;
-
-		  case SET_GAIN:
-			  //SetGain();
-			  break;
-
-		  case READING: {
-			  //ReadData();
-			  /*{
-			 while(noTrigger) {
-			 	 read()
-			 }
-			 }*/
-			  mode = SENDING;
-			  break;
-		  }
-
-		  case READING_TRIG_mode: {
-			  //ReadData();
-			  mode = SENDING;
-			  break;
-		  }
-
-		  case READING_TRACER_mode: {
-		  	  //ReadData();
-		  	  mode = SENDING;
-		  	  break;
-		  }
-
-		  case SENDING:
-
-			  break;
 	  }
+	  while (status == status_reading/*mode == READING_TRIG_mode*/) {
+		  //while(ready_to_send == False) {
+			  if( (adc_value = HAL_ADC_GetValue(&hadc1)) > trigger_level) {
+				  is_triggered = 1;
+			  }
+		  //}
+	  }
+	  if (status == status_SENDING_Data/*mode == SENDING_Data*/) {
+		  uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+		  status = status_doNothing;
+	  	  //while(!data_resp);
+	  }
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -352,7 +360,81 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void CDC_ReciveCallBack(uint8_t *Buf, uint32_t *Len) {
+	switch(Buf[0]) {
+		case 'b': {//begin
 
+			break;
+		}
+		case 'e': {//end
+
+			break;
+		}
+		case 's': {//settings
+
+//			settings_changed = True;
+			break;
+		}
+	}
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if((GPIO_Pin == GPIO_PIN_1)&&(status == status_doNothing))
+		{
+			status = status_reading;
+			HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&DMA_buffer, DMA_buf_size);
+		}
+		else
+		{
+			__NOP();
+		}
+}
+
+
+ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
+	 memcpy(&Data_buffer[data_part_idx * DMA_half_buf_size], &DMA_buffer[DMA_midIdx], DMA_half_buf_size * 2);
+	data_part_idx += is_triggered;
+
+	//For debug
+	/*if(data_part_idx > 3) {
+			HAL_ADC_Stop_DMA(&hadc1);
+			uint16_t trig_idx = 0;
+			for(int i = 0; i < 1000; i++) {
+				if(Data_buffer[i] > trigger_level)
+					trig_idx = i;
+			}
+		}*/
+
+
+	if(data_part_idx >= number_half_bufSize) {
+		HAL_ADC_Stop_DMA(&hadc1);
+		status = status_SENDING_Data;
+	}
+}
+
+void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc) {
+	//memcpy(&DMA_buffer, &Data_buffer[data_part_idx * DMA_half_buf_size], DMA_half_buf_size * 2);
+	memcpy(&Data_buffer[data_part_idx * DMA_half_buf_size], &DMA_buffer, DMA_half_buf_size * 2);
+	data_part_idx += is_triggered;
+
+	//For debug
+	/*if(data_part_idx > 3) {
+		HAL_ADC_Stop_DMA(&hadc1);
+		uint16_t trig_idx = 0;
+		for(int i = 0; i < 1000; i++) {
+			int a = Data_buffer[i];
+			if(a > trigger_level)
+				trig_idx = i;
+		}
+	}*/
+
+
+
+	if(data_part_idx >= number_half_bufSize) {
+		HAL_ADC_Stop_DMA(&hadc1);
+		status = status_SENDING_Data;
+	}
+}
 /* USER CODE END 4 */
 
 /**

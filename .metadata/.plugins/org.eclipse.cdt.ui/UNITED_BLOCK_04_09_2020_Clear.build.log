@@ -1,0 +1,39 @@
+18:53:32 **** Incremental Build of configuration Debug for project UNITED_BLOCK_04_09_2020_Clear ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Ok_Mess':
+../Core/Src/main.c:106:2: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'ADC_CDC_Transmit_Len'? [-Wimplicit-function-declaration]
+  CDC_Transmit_FS(&mess, strlen(mess));
+  ^~~~~~~~~~~~~~~
+  ADC_CDC_Transmit_Len
+../Core/Src/main.c: In function 'CDC_ReciveCallBack':
+../Core/Src/main.c:480:22: warning: passing argument 3 of 'memcpy' makes integer from pointer without a cast [-Wint-conversion]
+  memcpy(RX_Str, Buf, Len);
+                      ^~~
+In file included from ../USB_DEVICE/Target/usbd_conf.h:33:0,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../USB_DEVICE/App/usb_device.h:33,
+                 from ../Core/Src/main.c:22:
+c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\string.h:31:9: note: expected 'size_t {aka unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ void *  memcpy (void *__restrict, const void *__restrict, size_t);
+         ^~~~~~
+../Core/Src/main.c:481:13: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  CDC_RX_Len = Len;
+             ^
+arm-none-eabi-gcc -o "UNITED_BLOCK_04_09_2020_Clear.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\UNITED_BLOCK_04_09_2020_Clear\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UNITED_BLOCK_04_09_2020_Clear.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UNITED_BLOCK_04_09_2020_Clear.elf
+ 
+arm-none-eabi-objdump -h -S  UNITED_BLOCK_04_09_2020_Clear.elf  > "UNITED_BLOCK_04_09_2020_Clear.list"
+arm-none-eabi-objcopy  -O binary  UNITED_BLOCK_04_09_2020_Clear.elf  "UNITED_BLOCK_04_09_2020_Clear.bin"
+arm-none-eabi-size   UNITED_BLOCK_04_09_2020_Clear.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30016	    856	  14568	  45440	   b180	UNITED_BLOCK_04_09_2020_Clear.elf
+Finished building: default.size.stdout
+ 
+Finished building: UNITED_BLOCK_04_09_2020_Clear.bin
+ 
+Finished building: UNITED_BLOCK_04_09_2020_Clear.list
+ 
+
+18:53:35 Build Finished. 0 errors, 3 warnings. (took 2s.946ms)
+

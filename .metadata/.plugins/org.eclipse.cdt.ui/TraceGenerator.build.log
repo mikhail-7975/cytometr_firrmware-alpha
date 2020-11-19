@@ -1,0 +1,20 @@
+14:04:23 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TraceGenerator.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\cytometr_firrmware-alpha\TraceGenerator\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TraceGenerator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TraceGenerator.elf
+ 
+arm-none-eabi-objdump -h -S  TraceGenerator.elf  > "TraceGenerator.list"
+arm-none-eabi-objcopy  -O binary  TraceGenerator.elf  "TraceGenerator.bin"
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35076	    128	   2856	  38060	   94ac	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+Finished building: TraceGenerator.bin
+ 
+Finished building: TraceGenerator.list
+ 
+
+14:04:24 Build Finished. 0 errors, 0 warnings. (took 1s.505ms)
+

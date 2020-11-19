@@ -1,16 +1,627 @@
-15:25:56 **** Incremental Build of configuration Debug for project alpha_firmware ****
+12:02:18 **** Incremental Build of configuration Debug for project alpha_firmware ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
 arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: alpha_firmware.elf
  
-arm-none-eabi-size   alpha_firmware.elf 
 arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
 arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
    text	   data	    bss	    dec	    hex	filename
-  30536	    388	   4068	  34992	   88b0	alpha_firmware.elf
+  33660	    392	   6152	  40204	   9d0c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:02:35 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33660	    392	   6152	  40204	   9d0c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+12:05:19 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33660	    392	   6152	  40204	   9d0c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:07:28 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33660	    392	   6152	  40204	   9d0c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:09:34 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33644	    392	   6152	  40188	   9cfc	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:10:11 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33644	    392	   6152	  40188	   9cfc	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:13:12 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33644	    392	   6152	  40188	   9cfc	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:15:54 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33644	    392	   6152	  40188	   9cfc	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:18:43 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33644	    392	   6152	  40188	   9cfc	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+12:22:20 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvHalfCpltCallback':
+../Core/Src/main.c:417:12: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+   uint16_t trig_idx = 0;
+            ^~~~~~~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33692	    392	   6152	  40236	   9d2c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+13:19:24 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33692	    392	   6152	  40236	   9d2c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+13:19:41 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33692	    392	   6152	  40236	   9d2c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+13:20:56 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:400:13: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+    uint16_t trig_idx = 0;
+             ^~~~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvHalfCpltCallback':
+../Core/Src/main.c:422:12: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+   uint16_t trig_idx = 0;
+            ^~~~~~~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33740	    392	   6152	  40284	   9d5c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+13:21:51 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33740	    392	   6152	  40284	   9d5c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+13:22:32 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33740	    392	   6152	  40284	   9d5c	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+13:24:05 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:400:13: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+    uint16_t trig_idx = 0;
+             ^~~~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvHalfCpltCallback':
+../Core/Src/main.c:425:4: error: expected ',' or ';' before 'if'
+    if(a > trigger_level)
+    ^~
+../Core/Src/main.c:424:8: warning: unused variable 'a' [-Wunused-variable]
+    int a = Data_buffer[i]
+        ^
+../Core/Src/main.c:422:12: warning: unused variable 'trig_idx' [-Wunused-variable]
+   uint16_t trig_idx = 0;
+            ^~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:24:14 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:400:13: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+    uint16_t trig_idx = 0;
+             ^~~~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvHalfCpltCallback':
+../Core/Src/main.c:422:12: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+   uint16_t trig_idx = 0;
+            ^~~~~~~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33748	    392	   6152	  40292	   9d64	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+13:26:02 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:400:13: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+    uint16_t trig_idx = 0;
+             ^~~~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvHalfCpltCallback':
+../Core/Src/main.c:422:12: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+   uint16_t trig_idx = 0;
+            ^~~~~~~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33748	    392	   6152	  40292	   9d64	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+13:31:15 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35020	    128	   2856	  38004	   9474	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+13:32:51 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/option/syscall.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/option/syscall.d" -MT"Middlewares/Third_Party/FatFs/src/option/syscall.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/option/syscall.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/diskio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/diskio.d" -MT"Middlewares/Third_Party/FatFs/src/diskio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/diskio.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/ff.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/ff.d" -MT"Middlewares/Third_Party/FatFs/src/ff.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/ff.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/ff_gen_drv.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/ff_gen_drv.d" -MT"Middlewares/Third_Party/FatFs/src/ff_gen_drv.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/ff_gen_drv.o"
+arm-none-eabi-gcc "../FATFS/Target/bsp_driver_sd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FATFS/Target/bsp_driver_sd.d" -MT"FATFS/Target/bsp_driver_sd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "FATFS/Target/bsp_driver_sd.o"
+arm-none-eabi-gcc "../FATFS/Target/sd_diskio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FATFS/Target/sd_diskio.d" -MT"FATFS/Target/sd_diskio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "FATFS/Target/sd_diskio.o"
+arm-none-eabi-gcc "../FATFS/App/fatfs.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FATFS/App/fatfs.d" -MT"FATFS/App/fatfs.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "FATFS/App/fatfs.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32h7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32h7xx.d" -MT"Core/Src/system_stm32h7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32h7xx.o"
+arm-none-eabi-gcc -o "TraceGenerator.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\cytometr_firrmware-alpha\TraceGenerator\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TraceGenerator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TraceGenerator.elf
+ 
+arm-none-eabi-objdump -h -S  TraceGenerator.elf  > "TraceGenerator.list"
+arm-none-eabi-objcopy  -O binary  TraceGenerator.elf  "TraceGenerator.bin"
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35020	    128	   2856	  38004	   9474	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+Finished building: TraceGenerator.bin
+ 
+Finished building: TraceGenerator.list
+ 
+13:34:13 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35020	    128	   2856	  38004	   9474	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+13:44:18 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TraceGenerator.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\cytometr_firrmware-alpha\TraceGenerator\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TraceGenerator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TraceGenerator.elf
+ 
+arm-none-eabi-objdump -h -S  TraceGenerator.elf  > "TraceGenerator.list"
+arm-none-eabi-objcopy  -O binary  TraceGenerator.elf  "TraceGenerator.bin"
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35028	    128	   2856	  38012	   947c	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+Finished building: TraceGenerator.bin
+ 
+Finished building: TraceGenerator.list
+ 
+13:44:35 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TraceGenerator.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\cytometr_firrmware-alpha\TraceGenerator\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TraceGenerator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TraceGenerator.elf
+ 
+arm-none-eabi-objdump -h -S  TraceGenerator.elf  > "TraceGenerator.list"
+arm-none-eabi-objcopy  -O binary  TraceGenerator.elf  "TraceGenerator.bin"
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35028	    128	   2856	  38012	   947c	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+Finished building: TraceGenerator.bin
+ 
+Finished building: TraceGenerator.list
+ 
+13:44:50 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TraceGenerator.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\cytometr_firrmware-alpha\TraceGenerator\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TraceGenerator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TraceGenerator.elf
+ 
+arm-none-eabi-objdump -h -S  TraceGenerator.elf  > "TraceGenerator.list"
+arm-none-eabi-objcopy  -O binary  TraceGenerator.elf  "TraceGenerator.bin"
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35028	    128	   2856	  38012	   947c	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+Finished building: TraceGenerator.bin
+ 
+Finished building: TraceGenerator.list
+ 
+13:45:07 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TraceGenerator.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\cytometr_firrmware-alpha\TraceGenerator\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TraceGenerator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TraceGenerator.elf
+ 
+arm-none-eabi-objdump -h -S  TraceGenerator.elf  > "TraceGenerator.list"
+arm-none-eabi-objcopy  -O binary  TraceGenerator.elf  "TraceGenerator.bin"
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35036	    128	   2856	  38020	   9484	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+Finished building: TraceGenerator.bin
+ 
+Finished building: TraceGenerator.list
+ 
+14:04:23 **** Incremental Build of configuration Debug for project TraceGenerator ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TraceGenerator.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\cytometr_firrmware-alpha\TraceGenerator\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TraceGenerator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TraceGenerator.elf
+ 
+arm-none-eabi-objdump -h -S  TraceGenerator.elf  > "TraceGenerator.list"
+arm-none-eabi-objcopy  -O binary  TraceGenerator.elf  "TraceGenerator.bin"
+arm-none-eabi-size   TraceGenerator.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35076	    128	   2856	  38060	   94ac	TraceGenerator.elf
+Finished building: default.size.stdout
+ 
+Finished building: TraceGenerator.bin
+ 
+Finished building: TraceGenerator.list
+ 
+14:27:05 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:400:13: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+    uint16_t trig_idx = 0;
+             ^~~~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvHalfCpltCallback':
+../Core/Src/main.c:422:12: warning: variable 'trig_idx' set but not used [-Wunused-but-set-variable]
+   uint16_t trig_idx = 0;
+            ^~~~~~~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33748	    392	   6152	  40292	   9d64	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+14:31:48 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33748	    392	   6152	  40292	   9d64	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+14:33:11 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33620	    392	   6152	  40164	   9ce4	alpha_firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: alpha_firmware.bin
+ 
+Finished building: alpha_firmware.list
+ 
+14:37:28 **** Incremental Build of configuration Debug for project alpha_firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:19: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+                   ^~~~~~~~~~~~~~~
+                   HAL_SPI_Transmit_IT
+../Core/Src/main.c:158:13: warning: unused variable 'res' [-Wunused-variable]
+     uint8_t res = CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_size);
+             ^~~
+arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alpha_firmware.elf
+ 
+arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
+arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
+arm-none-eabi-size   alpha_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33628	    392	   6152	  40172	   9cec	alpha_firmware.elf
 Finished building: default.size.stdout
  
 Finished building: alpha_firmware.bin
