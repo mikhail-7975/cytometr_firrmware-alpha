@@ -39,11 +39,14 @@
 #define Data_buf_lenth 2000
 #define DMA_buf_size 40
 #define DMA_half_buf_size (DMA_buf_size / 2)
-#define number_half_bufSize (Data_buf_lenth / DMA_half_buf_size)
+#define number_half_bufSize (Data_buf_lenth / DMA_half_buf_size) //количество полоивин дма буффера в большом буффере
 
-#define status_reading 10
+#define status_reading_tracer 9
+#define status_reading_trigger 10
 #define status_SENDING_Data 11
-#define status_doNothing 12
+#define status_beReady_trigger 12
+#define status_beReady_tracer 14
+#define status_doNothing 13
 
 #define PARSING 1
 #define SET_GAIN 2
@@ -89,9 +92,11 @@ uint8_t data_req = False;
 uint8_t data_resp = False;
 uint8_t status = status_doNothing;
 
+
+
 uint8_t ack = False;
 
-uint8_t data_part_idx = 0;
+uint16_t data_part_idx = 0;
 
 uint8_t mode = 0;
 uint8_t settings_changed = False;
@@ -107,7 +112,7 @@ uint16_t trigger_level = 3700;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	//status = status_beReady;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -137,11 +142,12 @@ int main(void)
 
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start(&hadc1);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET); // set if do nothing
+
   //uint16_t gain = 0, new_gain = 0;
-
-
-
+  /*status = status_reading_trigger;
+  					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
+  					HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&DMA_buffer, DMA_buf_size);
+*/
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -151,26 +157,44 @@ int main(void)
 	  if (settings_changed) {
 
 	  }
-	  while (status == status_reading/*mode == READING_TRIG_mode*/) {
-		  //while(ready_to_send == False) {
-			  if( (adc_value = HAL_ADC_GetValue(&hadc1)) > trigger_level) {
+	  //release
+	  while (status == status_reading_trigger) {
+			  if((adc_value = HAL_ADC_GetValue(&hadc1)) > trigger_level) {
 				  is_triggered = 1;
 			  }
-		  //}
+			  //is_triggered = 1;
 	  }
-	  if (status == status_SENDING_Data/*mode == SENDING_Data*/) {
+	  if (status == status_SENDING_Data) {
 		  while(CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_lenth * sizeof(uint16_t)) == USBD_BUSY);
-
 		  while(ack != True);
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
+		  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+
 		  for(int i = 0; i < Data_buf_lenth; i++)
-			  Data_buffer[i] = 0;
+		  			Data_buffer[i] = 2000;
 		  ack = False;
 		  status = status_doNothing;
 		  is_triggered = 0;
 		  data_part_idx = 0;
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET); // set if do nothing
+		  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET); // set if do nothing
 	  }
 
+	  //debug
+	  //HAL_Delay(100);
+	  /*if (1) {
+		  for(int i=0; i < Data_buf_lenth; i++)
+		    {
+		  	  //int j = i;// - rand() % 500;
+		    	  //int x = (j*j*0.00002 + log(j+3));
+		    	  //int x1 = exp(-fabs(j*0.01-3));
+		    	  Data_buffer[i]= (uint16_t)((sin(i / 50.) + 1) * 2000) + rand()%100;
+		    }
+	  		  while(CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_lenth * sizeof(uint16_t)) == USBD_BUSY);
+	  		  //HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET); // set if do nothing
+	  		while(ack != True);
+	  		ack = False;
+	  	}*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -339,19 +363,19 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_7, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6|GPIO_PIN_7, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PA1 PA6 */
-  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_6;
+  /*Configure GPIO pin : PA1 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PA2 PA3 PA7 */
-  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_7;
+  /*Configure GPIO pins : PA2 PA3 PA4 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -368,24 +392,37 @@ static void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI1_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI1_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
-
 }
 
 /* USER CODE BEGIN 4 */
 void CDC_ReciveCallBack(uint8_t *Buf, uint32_t *Len) {
 	switch(Buf[0]) {
 		case 'a': {//ack
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
 			ack = True;
 				break;
 			}
 		case 'b': {//begin
+			if (status == status_doNothing) {
+				if(Buf[1] == 't') {
+					status = status_reading_trigger;
+					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
+					HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&DMA_buffer, DMA_buf_size);
+				}	else {
+					status = status_beReady_tracer;
+					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
+				}
 
-			break;
+				//HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_3);
+				//HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_3);
+				break;
+			}
 		}
 		case 'e': {//end
-
+			status = status_doNothing;
+			is_triggered = 0;
+			//data_part_idx = 0;
 			break;
 		}
 		case 's': {//settings
@@ -397,11 +434,12 @@ void CDC_ReciveCallBack(uint8_t *Buf, uint32_t *Len) {
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-	if((GPIO_Pin == GPIO_PIN_6)&&(status == status_doNothing))
+	if((GPIO_Pin == GPIO_PIN_1)&&(status == status_beReady_tracer)) //3.3 on PA1
 		{
-			status = status_reading;
+			status = status_reading_tracer;
+			is_triggered = 1;
 			HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&DMA_buffer, DMA_buf_size);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
+			//HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3 | GPIO_PIN_4, GPIO_PIN_RESET); //set 0 v on PA3
 		}
 		else
 		{
@@ -413,8 +451,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
  void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 	data_part_idx += is_triggered;
 	memcpy(&Data_buffer[data_part_idx * DMA_half_buf_size], &DMA_buffer[DMA_midIdx], DMA_half_buf_size * sizeof(uint16_t));
-	if(data_part_idx >= number_half_bufSize) {
+	if(data_part_idx >= number_half_bufSize) {//количество полоивин дма буффера в большом буффере
 		HAL_ADC_Stop_DMA(&hadc1);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET);
 		status = status_SENDING_Data;
 	}
 }
@@ -424,6 +463,7 @@ void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc) {
 	memcpy(&Data_buffer[data_part_idx * DMA_half_buf_size], &DMA_buffer, DMA_half_buf_size * sizeof(uint16_t));
 	if(data_part_idx >= number_half_bufSize) {
 		HAL_ADC_Stop_DMA(&hadc1);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET);
 		status = status_SENDING_Data;
 	}
 }

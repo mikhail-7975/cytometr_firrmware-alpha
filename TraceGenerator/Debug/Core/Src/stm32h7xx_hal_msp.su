@@ -1,5 +1,5 @@
 stm32h7xx_hal_msp.c:64:6:HAL_MspInit	16	static
 stm32h7xx_hal_msp.c:85:6:HAL_DAC_MspInit	48	static
-stm32h7xx_hal_msp.c:118:6:HAL_DAC_MspDeInit	16	static
-stm32h7xx_hal_msp.c:146:6:HAL_SD_MspInit	48	static
-stm32h7xx_hal_msp.c:195:6:HAL_SD_MspDeInit	16	static
+stm32h7xx_hal_msp.c:119:6:HAL_DAC_MspDeInit	16	static
+stm32h7xx_hal_msp.c:148:6:HAL_SD_MspInit	48	static
+stm32h7xx_hal_msp.c:197:6:HAL_SD_MspDeInit	16	static

@@ -97,17 +97,26 @@ int main(void)
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
   HAL_DAC_Start(&hdac1, DAC1_CHANNEL_1);
+  HAL_DAC_Start(&hdac1, DAC1_CHANNEL_2);
   double x = 0.0;
   double x1 = 0.0;
   uint16_t y[2000];
+  uint16_t y_[2000];
 
   for(int i=0; i < 2000; i++)
   {
 	  int j = i - 500;
   	  x = (j*j*0.00002 + log(j+3));
   	  x1 = exp(-fabs(j*0.01-3));
-  	  y[i]= (uint16_t)((sin(pow(x*0.5, 2) + 3)+1)*2000.0*x1);
+  	  y[i]= (uint16_t)((sin(pow(x*0.5, 2) + 3)+1)*3000.0*x1);
   }
+  for(int i=0; i < 2000; i++)
+    {
+  	  int j = i - 700;
+    	  x = (j*j*0.00002 + log(j+3));
+    	  x1 = exp(-fabs(j*0.01-3));
+    	  y_[i]= (uint16_t)((sin(pow(x*0.5, 2) + 3)+1)*2000.0*x1);
+    }
   for(int i = 20; i < 50; i++) {
 	  y[i] = 4000;
   }
@@ -117,12 +126,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
 	  for(int i =0; i<100; i++){}
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
 	  for(int i=0; i < 2000; i++)
 	  {
-	  	  HAL_DAC_SetValue(&hdac1, DAC1_CHANNEL_1, DAC_ALIGN_12B_R, y[i]);
+	  	  HAL_DAC_SetValue(&hdac1, DAC1_CHANNEL_1, DAC_ALIGN_12B_R, y_[i]);
+	  	  HAL_DAC_SetValue(&hdac1, DAC1_CHANNEL_2, DAC_ALIGN_12B_R, y[i]);
 	  }
     /* USER CODE END WHILE */
 
@@ -229,6 +239,13 @@ static void MX_DAC1_Init(void)
   {
     Error_Handler();
   }
+  /** DAC channel OUT2 config
+  */
+  sConfig.DAC_ConnectOnChipPeripheral = DAC_CHIPCONNECT_DISABLE;
+  if (HAL_DAC_ConfigChannel(&hdac1, &sConfig, DAC_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN DAC1_Init 2 */
 
   /* USER CODE END DAC1_Init 2 */
@@ -278,10 +295,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : PA5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  /*Configure GPIO pin : PA6 */
+  GPIO_InitStruct.Pin = GPIO_PIN_6;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

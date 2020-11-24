@@ -1,4 +1,4 @@
-20:11:09 **** Incremental Build of configuration Debug for project arbitr ****
+21:02:39 **** Incremental Build of configuration Debug for project arbitr ****
 make -j8 all 
 arm-none-eabi-size   arbitr.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   arbitr.elf
 Finished building: default.size.stdout
  
 
-20:11:10 Build Finished. 0 errors, 0 warnings. (took 326ms)
+21:02:39 Build Finished. 0 errors, 0 warnings. (took 429ms)
 
