@@ -159,7 +159,10 @@ int main(void)
   					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
   					HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&DMA_buffer, DMA_buf_size);
 */
-
+  Buf_[12] = "st0000g0000";
+  new_trigger_level = atoi(Buf_[2]);
+  newGain = atoi(Buf_[7]);
+  settings_changed = True;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -442,7 +445,6 @@ void CDC_ReciveCallBack(uint8_t *Buf, uint32_t *Len) {
 		}
 		case 's': {//settings
 			//Buf[] = "st0000g0000"
-
 			new_trigger_level = atoi(Buf[2]);
 			newGain = atoi(Buf[7]);
 			settings_changed = True;

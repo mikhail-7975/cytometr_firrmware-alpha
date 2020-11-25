@@ -442,9 +442,8 @@ void CDC_ReciveCallBack(uint8_t *Buf, uint32_t *Len) {
 		}
 		case 's': {//settings
 			//Buf[] = "st0000g0000"
-
-			new_trigger_level = atoi(Buf[2]);
-			newGain = atoi(Buf[7]);
+			new_trigger_level = atoi(&Buf[2]);
+			newGain = atoi(&Buf[7]);
 			settings_changed = True;
 			break;
 		}
