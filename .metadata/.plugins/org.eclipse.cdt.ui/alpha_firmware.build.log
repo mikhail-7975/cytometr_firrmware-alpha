@@ -1,46 +1,10 @@
-12:56:56 **** Incremental Build of configuration Debug for project alpha_firmware ****
+17:13:58 **** Incremental Build of configuration Debug for project alpha_firmware ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:183:11: warning: implicit declaration of function 'CDC_Transmit_FS'; did you mean 'HAL_SPI_Transmit_IT'? [-Wimplicit-function-declaration]
-     while(CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_lenth * sizeof(uint16_t)) == USBD_BUSY);
-           ^~~~~~~~~~~~~~~
-           HAL_SPI_Transmit_IT
-../Core/Src/main.c: In function 'CDC_ReciveCallBack':
-../Core/Src/main.c:446:29: warning: passing argument 1 of 'atoi' makes pointer from integer without a cast [-Wint-conversion]
-    new_trigger_level = atoi(Buf[2]);
-                             ^~~
-In file included from ../USB_DEVICE/Target/usbd_conf.h:32:0,
-                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
-                 from ../USB_DEVICE/App/usb_device.h:33,
-                 from ../Core/Src/main.c:22:
-c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:81:5: note: expected 'const char *' but argument is of type 'uint8_t {aka unsigned char}'
- int atoi (const char *__nptr);
-     ^~~~
-../Core/Src/main.c:447:19: warning: passing argument 1 of 'atoi' makes pointer from integer without a cast [-Wint-conversion]
-    newGain = atoi(Buf[7]);
-                   ^~~
-In file included from ../USB_DEVICE/Target/usbd_conf.h:32:0,
-                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
-                 from ../USB_DEVICE/App/usb_device.h:33,
-                 from ../Core/Src/main.c:22:
-c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:81:5: note: expected 'const char *' but argument is of type 'uint8_t {aka unsigned char}'
- int atoi (const char *__nptr);
-     ^~~~
-arm-none-eabi-gcc -o "alpha_firmware.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\cytometr_firrmware-alpha\alpha_firmware\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alpha_firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: alpha_firmware.elf
- 
-arm-none-eabi-objdump -h -S  alpha_firmware.elf  > "alpha_firmware.list"
-arm-none-eabi-objcopy  -O binary  alpha_firmware.elf  "alpha_firmware.bin"
 arm-none-eabi-size   alpha_firmware.elf 
    text	   data	    bss	    dec	    hex	filename
   35764	    856	   8160	  44780	   aeec	alpha_firmware.elf
 Finished building: default.size.stdout
  
-Finished building: alpha_firmware.bin
- 
-Finished building: alpha_firmware.list
- 
 
-12:56:58 Build Finished. 0 errors, 3 warnings. (took 1s.241ms)
+17:13:58 Build Finished. 0 errors, 0 warnings. (took 317ms)
 

@@ -4030,14 +4030,14 @@ LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .text.MX_ADC1_Init
                 0x0000000008000384       0x7c Core/Src/main.o
  .text.MX_SPI1_Init
-                0x0000000008000400       0x6c Core/Src/main.o
+                0x0000000008000400       0x70 Core/Src/main.o
  .text.MX_DMA_Init
-                0x000000000800046c       0x3c Core/Src/main.o
+                0x0000000008000470       0x3c Core/Src/main.o
  .text.MX_GPIO_Init
-                0x00000000080004a8      0x100 Core/Src/main.o
+                0x00000000080004ac      0x100 Core/Src/main.o
  .text.CDC_ReciveCallBack
-                0x00000000080005a8      0x130 Core/Src/main.o
-                0x00000000080005a8                CDC_ReciveCallBack
+                0x00000000080005ac      0x12c Core/Src/main.o
+                0x00000000080005ac                CDC_ReciveCallBack
  .text.HAL_GPIO_EXTI_Callback
                 0x00000000080006d8       0x4c Core/Src/main.o
                 0x00000000080006d8                HAL_GPIO_EXTI_Callback
@@ -5197,32 +5197,32 @@ OUTPUT(alpha_firmware.elf elf32-littlearm)
  .debug_macro   0x000000000001a3b0       0x1c USB_DEVICE/App/usbd_desc.o
  .debug_macro   0x000000000001a3cc      0x3e7 USB_DEVICE/Target/usbd_conf.o
 
-.debug_line     0x0000000000000000     0xf782
- .debug_line    0x0000000000000000      0xae3 Core/Src/main.o
- .debug_line    0x0000000000000ae3      0x728 Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x000000000000120b      0x7a9 Core/Src/stm32f1xx_it.o
- .debug_line    0x00000000000019b4      0x6e5 Core/Src/system_stm32f1xx.o
- .debug_line    0x0000000000002099       0x84 Core/Startup/startup_stm32f103c8tx.o
- .debug_line    0x000000000000211d      0x898 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x00000000000029b5      0xbe9 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
- .debug_line    0x000000000000359e      0xa2c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
- .debug_line    0x0000000000003fca      0x96f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x0000000000004939      0xafd Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
- .debug_line    0x0000000000005436      0x894 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x0000000000005cca      0xcfc Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.o
- .debug_line    0x00000000000069c6      0x709 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.o
- .debug_line    0x00000000000070cf      0x958 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_line    0x0000000000007a27      0x776 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
- .debug_line    0x000000000000819d     0x1083 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o
- .debug_line    0x0000000000009220      0xd31 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.o
- .debug_line    0x0000000000009f51      0xb74 Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
- .debug_line    0x000000000000aac5      0xbaf Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
- .debug_line    0x000000000000b674      0xc38 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
- .debug_line    0x000000000000c2ac      0xa18 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_line    0x000000000000ccc4      0x9fa USB_DEVICE/App/usb_device.o
- .debug_line    0x000000000000d6be      0xa3f USB_DEVICE/App/usbd_cdc_if.o
- .debug_line    0x000000000000e0fd      0xa4c USB_DEVICE/App/usbd_desc.o
- .debug_line    0x000000000000eb49      0xc39 USB_DEVICE/Target/usbd_conf.o
+.debug_line     0x0000000000000000     0xf784
+ .debug_line    0x0000000000000000      0xae5 Core/Src/main.o
+ .debug_line    0x0000000000000ae5      0x728 Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x000000000000120d      0x7a9 Core/Src/stm32f1xx_it.o
+ .debug_line    0x00000000000019b6      0x6e5 Core/Src/system_stm32f1xx.o
+ .debug_line    0x000000000000209b       0x84 Core/Startup/startup_stm32f103c8tx.o
+ .debug_line    0x000000000000211f      0x898 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x00000000000029b7      0xbe9 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_line    0x00000000000035a0      0xa2c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_line    0x0000000000003fcc      0x96f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x000000000000493b      0xafd Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_line    0x0000000000005438      0x894 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x0000000000005ccc      0xcfc Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.o
+ .debug_line    0x00000000000069c8      0x709 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.o
+ .debug_line    0x00000000000070d1      0x958 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_line    0x0000000000007a29      0x776 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+ .debug_line    0x000000000000819f     0x1083 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o
+ .debug_line    0x0000000000009222      0xd31 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.o
+ .debug_line    0x0000000000009f53      0xb74 Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
+ .debug_line    0x000000000000aac7      0xbaf Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+ .debug_line    0x000000000000b676      0xc38 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ .debug_line    0x000000000000c2ae      0xa18 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+ .debug_line    0x000000000000ccc6      0x9fa USB_DEVICE/App/usb_device.o
+ .debug_line    0x000000000000d6c0      0xa3f USB_DEVICE/App/usbd_cdc_if.o
+ .debug_line    0x000000000000e0ff      0xa4c USB_DEVICE/App/usbd_desc.o
+ .debug_line    0x000000000000eb4b      0xc39 USB_DEVICE/Target/usbd_conf.o
 
 .debug_str      0x0000000000000000    0x8b9f6
  .debug_str     0x0000000000000000    0x881d8 Core/Src/main.o

@@ -85,7 +85,7 @@ void DAC_Write(uint16_t val)
   uint8_t data[2];
   memcpy(&data, &dac_data, sizeof(data));
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
-  HAL_SPI_Transmit(&hspi1, data, 1/*sizeof(data)*/, 0);
+  HAL_SPI_Transmit(&hspi1, data, sizeof(data), 0);
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
 }
 /* USER CODE END PFP */
@@ -446,15 +446,8 @@ void CDC_ReciveCallBack(uint8_t *Buf, uint32_t *Len) {
 		case 's': {//settings
 			//Buf[] = "st0000g0000"
 
-			//char tr[5];
-			//memcpy(&tr, Buf[2], 4);
-			//tr[4] = '\0';
-			//char g[5];
-			//memcpy(&g, Buf[7], 4);
-			//g[4] = '\0';
-			//CDC_Transmit_FS(, 4);
-			new_trigger_level = atoi(&Buf[2]);
-			newGain = atoi(&Buf[7]);
+			new_trigger_level = atoi((char*)Buf[2]);
+			newGain = atoi((char*)Buf[7]);
 			settings_changed = True;
 			break;
 		}
