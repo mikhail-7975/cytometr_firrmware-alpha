@@ -36,7 +36,7 @@
 #define True 1
 #define False 0
 
-#define Data_buf_lenth 2000
+#define Data_buf_lenth 4000
 #define DMA_buf_size 40
 #define DMA_half_buf_size (DMA_buf_size / 2)
 #define number_half_bufSize (Data_buf_lenth / DMA_half_buf_size) //количество полоивин дма буффера в большом буффере

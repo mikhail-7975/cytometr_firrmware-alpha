@@ -21,9 +21,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, DATA
   8 .data         00000350  20000000  08008bbc  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          000019dc  20000350  08008f0c  00020350  2**2
+  9 .bss          0000297c  20000350  08008f0c  00020350  2**2
                   ALLOC
- 10 ._user_heap_stack 00000604  20001d2c  08008f0c  00021d2c  2**0
+ 10 ._user_heap_stack 00000604  20002ccc  08008f0c  00022ccc  2**0
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00020350  2**0
                   CONTENTS, READONLY
@@ -237,7 +237,7 @@ int main(void)
  8000226:	d1d2      	bne.n	80001ce <main+0x2e>
 		  while(CDC_Transmit_FS((uint8_t*)&Data_buffer, Data_buf_lenth * sizeof(uint16_t)) == USBD_BUSY);
  8000228:	bf00      	nop
- 800022a:	f44f 617a 	mov.w	r1, #4000	; 0xfa0
+ 800022a:	f44f 51fa 	mov.w	r1, #8000	; 0x1f40
  800022e:	4822      	ldr	r0, [pc, #136]	; (80002b8 <main+0x118>)
  8000230:	f007 ff16 	bl	8008060 <CDC_Transmit_FS>
  8000234:	4603      	mov	r3, r0
@@ -275,7 +275,7 @@ int main(void)
  800026c:	3301      	adds	r3, #1
  800026e:	607b      	str	r3, [r7, #4]
  8000270:	687b      	ldr	r3, [r7, #4]
- 8000272:	f5b3 6ffa 	cmp.w	r3, #2000	; 0x7d0
+ 8000272:	f5b3 6f7a 	cmp.w	r3, #4000	; 0xfa0
  8000276:	dbf2      	blt.n	800025e <main+0xbe>
 		  ack = False;
  8000278:	4b10      	ldr	r3, [pc, #64]	; (80002bc <main+0x11c>)
@@ -1061,7 +1061,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	if(data_part_idx >= number_half_bufSize) {//количество полоивин дма буффера в большом буффере
  8000764:	4b0a      	ldr	r3, [pc, #40]	; (8000790 <HAL_ADC_ConvCpltCallback+0x6c>)
  8000766:	881b      	ldrh	r3, [r3, #0]
- 8000768:	2b63      	cmp	r3, #99	; 0x63
+ 8000768:	2bc7      	cmp	r3, #199	; 0xc7
  800076a:	d90a      	bls.n	8000782 <HAL_ADC_ConvCpltCallback+0x5e>
 		HAL_ADC_Stop_DMA(&hadc1);
  800076c:	480c      	ldr	r0, [pc, #48]	; (80007a0 <HAL_ADC_ConvCpltCallback+0x7c>)
@@ -1126,7 +1126,7 @@ void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc) {
 	if(data_part_idx >= number_half_bufSize) {
  80007e4:	4b0a      	ldr	r3, [pc, #40]	; (8000810 <HAL_ADC_ConvHalfCpltCallback+0x64>)
  80007e6:	881b      	ldrh	r3, [r3, #0]
- 80007e8:	2b63      	cmp	r3, #99	; 0x63
+ 80007e8:	2bc7      	cmp	r3, #199	; 0xc7
  80007ea:	d90a      	bls.n	8000802 <HAL_ADC_ConvHalfCpltCallback+0x56>
 		HAL_ADC_Stop_DMA(&hadc1);
  80007ec:	480b      	ldr	r0, [pc, #44]	; (800081c <HAL_ADC_ConvHalfCpltCallback+0x70>)
@@ -1722,7 +1722,7 @@ void USB_HP_CAN1_TX_IRQHandler(void)
  8000aa2:	bf00      	nop
  8000aa4:	bd80      	pop	{r7, pc}
  8000aa6:	bf00      	nop
- 8000aa8:	20001a40 	.word	0x20001a40
+ 8000aa8:	200029e0 	.word	0x200029e0
 
 08000aac <USB_LP_CAN1_RX0_IRQHandler>:
 
@@ -1746,7 +1746,7 @@ void USB_LP_CAN1_RX0_IRQHandler(void)
  8000ab6:	bf00      	nop
  8000ab8:	bd80      	pop	{r7, pc}
  8000aba:	bf00      	nop
- 8000abc:	20001a40 	.word	0x20001a40
+ 8000abc:	200029e0 	.word	0x200029e0
 
 08000ac0 <SystemInit>:
   * @note   This function should be used only after reset.
@@ -1847,7 +1847,7 @@ LoopFillZerobss:
   ldr r2, =_sbss
  8000b0c:	20000350 	.word	0x20000350
   ldr r3, = _ebss
- 8000b10:	20001d2c 	.word	0x20001d2c
+ 8000b10:	20002ccc 	.word	0x20002ccc
 
 08000b14 <ADC1_2_IRQHandler>:
  * @retval : None
@@ -1995,7 +1995,7 @@ __weak void HAL_IncTick(void)
  8000bbc:	bc80      	pop	{r7}
  8000bbe:	4770      	bx	lr
  8000bc0:	2000000c 	.word	0x2000000c
- 8000bc4:	20001658 	.word	0x20001658
+ 8000bc4:	200025f8 	.word	0x200025f8
 
 08000bc8 <HAL_GetTick>:
   * @note  This function is declared as __weak to be overwritten in case of other
@@ -2014,7 +2014,7 @@ __weak uint32_t HAL_GetTick(void)
  8000bd2:	46bd      	mov	sp, r7
  8000bd4:	bc80      	pop	{r7}
  8000bd6:	4770      	bx	lr
- 8000bd8:	20001658 	.word	0x20001658
+ 8000bd8:	200025f8 	.word	0x200025f8
 
 08000bdc <HAL_ADC_Init>:
   *         of structure "ADC_InitTypeDef".
@@ -20513,7 +20513,7 @@ void MX_USB_DEVICE_Init(void)
  8007f28:	bf00      	nop
  8007f2a:	bd80      	pop	{r7, pc}
  8007f2c:	20000130 	.word	0x20000130
- 8007f30:	2000165c 	.word	0x2000165c
+ 8007f30:	200025fc 	.word	0x200025fc
  8007f34:	2000001c 	.word	0x2000001c
  8007f38:	20000120 	.word	0x20000120
 
@@ -20543,9 +20543,9 @@ static int8_t CDC_Init_FS(void)
 }
  8007f54:	4618      	mov	r0, r3
  8007f56:	bd80      	pop	{r7, pc}
- 8007f58:	20001930 	.word	0x20001930
- 8007f5c:	2000165c 	.word	0x2000165c
- 8007f60:	20001920 	.word	0x20001920
+ 8007f58:	200028d0 	.word	0x200028d0
+ 8007f5c:	200025fc 	.word	0x200025fc
+ 8007f60:	200028c0 	.word	0x200028c0
 
 08007f64 <CDC_DeInit_FS>:
 /**
@@ -20678,7 +20678,7 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
  8008056:	46bd      	mov	sp, r7
  8008058:	bd80      	pop	{r7, pc}
  800805a:	bf00      	nop
- 800805c:	2000165c 	.word	0x2000165c
+ 800805c:	200025fc 	.word	0x200025fc
 
 08008060 <CDC_Transmit_FS>:
   * @param  Buf: Buffer of data to be sent
@@ -20730,7 +20730,7 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
  80080a2:	46bd      	mov	sp, r7
  80080a4:	bd80      	pop	{r7, pc}
  80080a6:	bf00      	nop
- 80080a8:	2000165c 	.word	0x2000165c
+ 80080a8:	200025fc 	.word	0x200025fc
 
 080080ac <USBD_FS_DeviceDescriptor>:
   * @param  speed : Current device speed
@@ -20831,7 +20831,7 @@ uint8_t * USBD_FS_ProductStrDescriptor(USBD_SpeedTypeDef speed, uint16_t *length
  8008122:	46bd      	mov	sp, r7
  8008124:	bd80      	pop	{r7, pc}
  8008126:	bf00      	nop
- 8008128:	20001940 	.word	0x20001940
+ 8008128:	200028e0 	.word	0x200028e0
  800812c:	08008a48 	.word	0x08008a48
 
 08008130 <USBD_FS_ManufacturerStrDescriptor>:
@@ -20860,7 +20860,7 @@ uint8_t * USBD_FS_ManufacturerStrDescriptor(USBD_SpeedTypeDef speed, uint16_t *l
  800814a:	3708      	adds	r7, #8
  800814c:	46bd      	mov	sp, r7
  800814e:	bd80      	pop	{r7, pc}
- 8008150:	20001940 	.word	0x20001940
+ 8008150:	200028e0 	.word	0x200028e0
  8008154:	08008a60 	.word	0x08008a60
 
 08008158 <USBD_FS_SerialStrDescriptor>:
@@ -20939,7 +20939,7 @@ uint8_t * USBD_FS_ConfigStrDescriptor(USBD_SpeedTypeDef speed, uint16_t *length)
  80081aa:	46bd      	mov	sp, r7
  80081ac:	bd80      	pop	{r7, pc}
  80081ae:	bf00      	nop
- 80081b0:	20001940 	.word	0x20001940
+ 80081b0:	200028e0 	.word	0x200028e0
  80081b4:	08008a74 	.word	0x08008a74
 
 080081b8 <USBD_FS_InterfaceStrDescriptor>:
@@ -20983,7 +20983,7 @@ uint8_t * USBD_FS_InterfaceStrDescriptor(USBD_SpeedTypeDef speed, uint16_t *leng
  80081e6:	46bd      	mov	sp, r7
  80081e8:	bd80      	pop	{r7, pc}
  80081ea:	bf00      	nop
- 80081ec:	20001940 	.word	0x20001940
+ 80081ec:	200028e0 	.word	0x200028e0
  80081f0:	08008a80 	.word	0x08008a80
 
 080081f4 <Get_SerialNum>:
@@ -21531,7 +21531,7 @@ USBD_StatusTypeDef USBD_LL_Init(USBD_HandleTypeDef *pdev)
  8008502:	46bd      	mov	sp, r7
  8008504:	bd80      	pop	{r7, pc}
  8008506:	bf00      	nop
- 8008508:	20001a40 	.word	0x20001a40
+ 8008508:	200029e0 	.word	0x200029e0
  800850c:	40005c00 	.word	0x40005c00
 
 08008510 <USBD_LL_Start>:

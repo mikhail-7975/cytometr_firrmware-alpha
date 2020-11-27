@@ -6030,3 +6030,873 @@
 2020-11-25 00:53:49,838 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 1898mS.
 2020-11-25 00:53:49,839 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
 2020-11-25 00:53:49,842 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-11-25 15:13:33,366 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 538567392 Bytes (1073741824)
+2020-11-25 15:13:33,694 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 542761696 Bytes (1073741824)
+2020-11-25 15:13:34,333 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 566352616 Bytes (1073741824)
+2020-11-25 15:13:34,737 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SPI
+2020-11-25 15:13:34,737 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-11-25 15:13:34,737 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-11-25 15:13:34,737 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: ADC
+2020-11-25 15:13:34,737 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-11-25 15:13:34,737 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-11-25 15:13:34,738 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: DMA
+2020-11-25 15:13:34,738 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-11-25 15:13:34,738 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-11-25 15:13:34,738 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\
+2020-11-25 15:13:34,743 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-11-25 15:13:34,744 [INFO] Argument:280 - 	 sub Args: 
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Channel1
+2020-11-25 15:13:34,744 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Channel1
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : Initvalue: null
+2020-11-25 15:13:34,744 [INFO] Argument:280 - 	 sub Args: 
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-11-25 15:13:34,744 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-11-25 15:13:34,744 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-11-25 15:13:34,744 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-11-25 15:13:34,744 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-11-25 15:13:34,744 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-11-25 15:13:34,744 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : Statevalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : Statevalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-11-25 15:13:34,745 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-11-25 15:13:35,176 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\license.tmp_save
+2020-11-25 15:13:35,370 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\license.tmp
+2020-11-25 15:13:35,436 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\gpio.tmp_save
+2020-11-25 15:13:35,491 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\gpio.tmp
+2020-11-25 15:13:35,500 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-11-25 15:13:35,610 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_vars.tmp_save
+2020-11-25 15:13:35,657 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_vars.tmp
+2020-11-25 15:13:35,678 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_inc.tmp_save
+2020-11-25 15:13:35,759 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_inc.tmp
+2020-11-25 15:13:35,826 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_HalInit.tmp_save
+2020-11-25 15:13:35,927 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_HalInit.tmp
+2020-11-25 15:13:35,951 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_Msp.tmp_save
+2020-11-25 15:13:36,018 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_Msp.tmp
+2020-11-25 15:13:36,192 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 15:13:36,194 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 15:13:36,231 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma.tmp_save
+2020-11-25 15:13:36,309 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma.tmp
+2020-11-25 15:13:36,335 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma_GV.tmp_save
+2020-11-25 15:13:36,866 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma_GV.tmp
+2020-11-25 15:13:36,868 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 15:13:36,869 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 15:13:36,873 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-11-25 15:13:36,913 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.c_save
+2020-11-25 15:13:38,294 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.c
+2020-11-25 15:13:38,371 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.h_save
+2020-11-25 15:13:38,454 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.h
+2020-11-25 15:13:38,562 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.h_save
+2020-11-25 15:13:38,637 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.h
+2020-11-25 15:13:38,669 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.c_save
+2020-11-25 15:13:38,809 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.c
+2020-11-25 15:13:38,862 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.h_save
+2020-11-25 15:13:39,001 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.h
+2020-11-25 15:13:39,050 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.c_save
+2020-11-25 15:13:39,136 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.c
+2020-11-25 15:13:39,180 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.h_save
+2020-11-25 15:13:39,249 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.h
+2020-11-25 15:13:39,281 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.c_save
+2020-11-25 15:13:39,376 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.c
+2020-11-25 15:13:39,436 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_it.c_save
+2020-11-25 15:13:39,538 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_it.c
+2020-11-25 15:13:39,598 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_it.h_save
+2020-11-25 15:13:39,691 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_it.h
+2020-11-25 15:13:39,737 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_hal_msp.c_save
+2020-11-25 15:13:39,897 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_hal_msp.c
+2020-11-25 15:13:39,941 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\system.tmp_save
+2020-11-25 15:13:40,032 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\system.tmp
+2020-11-25 15:13:40,112 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_hal_conf.h_save
+2020-11-25 15:13:40,272 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_hal_conf.h
+2020-11-25 15:13:40,296 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-11-25 15:13:40,297 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-11-25 15:13:40,419 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\main.h_save
+2020-11-25 15:13:40,503 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\main.h
+2020-11-25 15:13:40,541 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\main.c_save
+2020-11-25 15:13:40,770 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\main.c
+2020-11-25 15:13:42,800 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 622mS.
+2020-11-25 15:13:42,804 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-11-25 15:13:43,300 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-11-25 15:13:44,943 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 2139mS.
+2020-11-25 15:13:44,944 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2020-11-25 15:13:44,947 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-11-25 16:04:06,045 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 935527408 Bytes (1073741824)
+2020-11-25 16:04:06,142 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 942228048 Bytes (1073741824)
+2020-11-25 16:04:06,747 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 542348440 Bytes (1073741824)
+2020-11-25 16:04:06,988 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SPI
+2020-11-25 16:04:06,989 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-11-25 16:04:06,989 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-11-25 16:04:06,989 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: ADC
+2020-11-25 16:04:06,989 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-11-25 16:04:06,989 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-11-25 16:04:06,989 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: DMA
+2020-11-25 16:04:06,989 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-11-25 16:04:06,990 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-11-25 16:04:06,990 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\
+2020-11-25 16:04:06,998 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-11-25 16:04:06,998 [INFO] Argument:280 - 	 sub Args: 
+2020-11-25 16:04:06,998 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Channel1
+2020-11-25 16:04:06,998 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Channel1
+2020-11-25 16:04:06,998 [INFO] Argument:278 - Argument : Initvalue: null
+2020-11-25 16:04:06,998 [INFO] Argument:280 - 	 sub Args: 
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2020-11-25 16:04:06,999 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-11-25 16:04:06,999 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:278 - Argument : Statevalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:288 - Argument : Statevalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-11-25 16:04:07,000 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-11-25 16:04:07,261 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\license.tmp_save
+2020-11-25 16:04:07,313 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\license.tmp
+2020-11-25 16:04:07,361 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\gpio.tmp_save
+2020-11-25 16:04:07,527 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\gpio.tmp
+2020-11-25 16:04:07,529 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-11-25 16:04:07,573 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_vars.tmp_save
+2020-11-25 16:04:07,615 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_vars.tmp
+2020-11-25 16:04:07,636 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_inc.tmp_save
+2020-11-25 16:04:07,677 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_inc.tmp
+2020-11-25 16:04:07,715 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_HalInit.tmp_save
+2020-11-25 16:04:07,766 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_HalInit.tmp
+2020-11-25 16:04:07,789 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_Msp.tmp_save
+2020-11-25 16:04:07,855 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_Msp.tmp
+2020-11-25 16:04:07,912 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:04:07,913 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:04:07,939 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma.tmp_save
+2020-11-25 16:04:07,983 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma.tmp
+2020-11-25 16:04:08,020 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma_GV.tmp_save
+2020-11-25 16:04:08,059 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma_GV.tmp
+2020-11-25 16:04:08,060 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:04:08,062 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:04:08,067 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-11-25 16:04:08,097 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.c_save
+2020-11-25 16:04:08,161 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.c
+2020-11-25 16:04:08,185 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.h_save
+2020-11-25 16:04:08,235 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.h
+2020-11-25 16:04:08,258 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.h_save
+2020-11-25 16:04:08,314 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.h
+2020-11-25 16:04:08,381 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.c_save
+2020-11-25 16:04:08,474 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.c
+2020-11-25 16:04:08,493 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.h_save
+2020-11-25 16:04:08,542 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.h
+2020-11-25 16:04:08,637 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.c_save
+2020-11-25 16:04:08,719 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.c
+2020-11-25 16:04:08,738 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.h_save
+2020-11-25 16:04:08,789 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.h
+2020-11-25 16:04:08,818 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.c_save
+2020-11-25 16:04:08,902 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.c
+2020-11-25 16:04:08,932 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_it.c_save
+2020-11-25 16:04:09,169 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_it.c
+2020-11-25 16:04:09,196 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_it.h_save
+2020-11-25 16:04:09,394 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_it.h
+2020-11-25 16:04:09,429 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_hal_msp.c_save
+2020-11-25 16:04:09,517 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_hal_msp.c
+2020-11-25 16:04:09,541 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\system.tmp_save
+2020-11-25 16:04:09,588 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\system.tmp
+2020-11-25 16:04:09,619 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_hal_conf.h_save
+2020-11-25 16:04:09,700 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_hal_conf.h
+2020-11-25 16:04:09,717 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-11-25 16:04:09,717 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-11-25 16:04:09,745 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\main.h_save
+2020-11-25 16:04:09,797 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\main.h
+2020-11-25 16:04:09,826 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\main.c_save
+2020-11-25 16:04:09,940 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\main.c
+2020-11-25 16:04:10,980 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 320mS.
+2020-11-25 16:04:10,984 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-11-25 16:04:11,209 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-11-25 16:04:13,084 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 2100mS.
+2020-11-25 16:04:13,085 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-11-25 16:04:13,090 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-11-25 16:51:50,849 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:51:50,854 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:51:50,893 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:51:50,897 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:51:50,900 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:51:50,906 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:52:08,037 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:52:08,041 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:52:08,047 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:52:11,492 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:52:11,493 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:52:11,495 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:52:15,981 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:52:15,983 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:52:15,987 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:52:18,868 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:52:18,869 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:52:18,870 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2020-11-25 16:52:18,870 [INFO] ThirdParty:777 - entering critical section [close project]
+2020-11-25 16:52:18,871 [INFO] ThirdParty:790 - exiting critical section [close project]
+2020-11-25 16:52:18,873 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:52:18,957 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 836167760 Bytes (1073741824)
+2020-11-25 16:52:18,957 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:52:18,957 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:52:18,957 [INFO] OpenFileManager:274 - Change cursor
+2020-11-25 16:52:19,134 [INFO] RulesReader:52 - Compatibility file has been processed (209 Rules)
+2020-11-25 16:52:21,148 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:52:21,148 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:52:21,148 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:52:21,149 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:52:21,149 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:52:21,149 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:52:21,158 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:52:21,158 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:52:21,158 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:52:21,191 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:52:21,191 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:52:21,191 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:52:21,192 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:52:21,192 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:52:21,192 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:52:21,192 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_Condition id : 1602484938489
+2020-11-25 16:52:21,192 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:52:21,192 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_HelloWorld_Condition id : 1602484938491
+2020-11-25 16:52:21,193 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:52:21,193 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:52:21,193 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:52:21,193 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:52:21,193 [WARN] ModelIntegratedComponent:188 - Missing modes for component 1602574019385
+2020-11-25 16:52:21,194 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:52:21,194 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:52:21,194 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:52:21,194 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:52:21,194 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:52:21,195 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:52:21,195 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:52:21,195 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:52:21,195 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:52:21,195 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.0.0: no header file found
+2020-11-25 16:52:21,196 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2020-11-25 16:52:21,196 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.1: no header file found
+2020-11-25 16:52:21,197 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.0.0: no header file found
+2020-11-25 16:52:21,298 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2020-11-25 16:52:21,298 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2020-11-25 16:52:21,298 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2020-11-25 16:52:21,298 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2020-11-25 16:52:21,298 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:52:21,299 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:52:21,299 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2020-11-25 16:52:21,299 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2020-11-25 16:52:21,299 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2020-11-25 16:52:21,299 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2020-11-25 16:52:21,743 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 643974160 Bytes (1073741824)
+2020-11-25 16:52:21,744 [WARN] ThirdParty:741 - waiting for thirdparty lock release [change project]
+2020-11-25 16:52:21,745 [INFO] ThirdParty:743 - entering critical section [change project]
+2020-11-25 16:52:21,745 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2020-11-25 16:52:21,745 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.0
+2020-11-25 16:52:21,745 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2020-11-25 16:52:21,746 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2020-11-25 16:52:21,746 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 2.0.0
+2020-11-25 16:52:21,746 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2020-11-25 16:52:21,746 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2020-11-25 16:52:21,746 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.1.1
+2020-11-25 16:52:21,747 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2020-11-25 16:52:21,747 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2020-11-25 16:52:21,747 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2020-11-25 16:52:21,747 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-11-25 16:52:21,748 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2020-11-25 16:52:21,748 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.1.0
+2020-11-25 16:52:21,748 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.0.0
+2020-11-25 16:52:21,748 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.1.0
+2020-11-25 16:52:21,748 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 2.0.0
+2020-11-25 16:52:21,748 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.0.0
+2020-11-25 16:52:21,749 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2020-11-25 16:52:21,749 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2020-11-25 16:52:21,749 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2020-11-25 16:52:21,749 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.15.0
+2020-11-25 16:52:21,749 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2020-11-25 16:52:21,750 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.2.0
+2020-11-25 16:52:21,750 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.1
+2020-11-25 16:52:21,750 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.0.0
+2020-11-25 16:52:21,750 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.0
+2020-11-25 16:52:21,750 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2020-11-25 16:52:21,751 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2020-11-25 16:52:21,751 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2020-11-25 16:52:21,751 [INFO] ThirdParty:749 - exiting critical section [change project]
+2020-11-25 16:52:21,942 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:52:21,986 [INFO] PinOutPanel:1418 - setPackage(STM32F103C8Tx,LQFP48)
+2020-11-25 16:52:22,462 [INFO] UtilMem:74 - Before build in PCC Used Memory: 558288752 Bytes (1073741824)
+2020-11-25 16:52:23,078 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:52:23,170 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:52:23,240 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:52:23,243 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:52:23,279 [INFO] UtilMem:74 - After build in PCC Used Memory: 599709544 Bytes (1073741824)
+2020-11-25 16:52:23,294 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,294 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,294 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,295 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,295 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,295 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,295 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,295 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,296 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,296 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,296 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,296 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,297 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,297 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,298 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,298 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,298 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,298 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,299 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,299 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,299 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,299 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,300 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,300 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,300 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,300 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:23,301 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:52:24,064 [INFO] OpenFileManager:294 - Restore cursor
+2020-11-25 16:53:56,298 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:53:56,299 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:53:56,301 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:53:56,303 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:53:56,305 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:53:56,307 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:54:01,828 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:54:01,830 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:54:01,832 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:54:07,850 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:54:07,850 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:54:07,851 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2020-11-25 16:54:07,851 [INFO] ThirdParty:777 - entering critical section [close project]
+2020-11-25 16:54:07,852 [INFO] ThirdParty:790 - exiting critical section [close project]
+2020-11-25 16:54:07,853 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:54:07,858 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 580921800 Bytes (1073741824)
+2020-11-25 16:54:07,859 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:54:07,860 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:54:07,860 [INFO] OpenFileManager:274 - Change cursor
+2020-11-25 16:54:09,401 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:54:09,402 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:54:09,402 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:54:09,402 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:54:09,402 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:54:09,402 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:54:09,410 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:54:09,411 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:54:09,411 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:54:09,422 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:54:09,423 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:54:09,423 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:54:09,423 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:54:09,423 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:54:09,423 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:54:09,424 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_Condition id : 1602484938489
+2020-11-25 16:54:09,424 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:54:09,424 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_HelloWorld_Condition id : 1602484938491
+2020-11-25 16:54:09,424 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:54:09,424 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:54:09,424 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:54:09,424 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:54:09,424 [WARN] ModelIntegratedComponent:188 - Missing modes for component 1602574019385
+2020-11-25 16:54:09,425 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:54:09,425 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:54:09,425 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:54:09,425 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:54:09,425 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:54:09,426 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:54:09,426 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:54:09,426 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:54:09,426 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:54:09,426 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.0.0: no header file found
+2020-11-25 16:54:09,426 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2020-11-25 16:54:09,427 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.1: no header file found
+2020-11-25 16:54:09,427 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.0.0: no header file found
+2020-11-25 16:54:09,595 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2020-11-25 16:54:09,595 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2020-11-25 16:54:09,595 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2020-11-25 16:54:09,596 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2020-11-25 16:54:09,596 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:54:09,596 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:54:09,597 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2020-11-25 16:54:09,597 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2020-11-25 16:54:09,597 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2020-11-25 16:54:09,597 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2020-11-25 16:54:09,736 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 719860160 Bytes (1073741824)
+2020-11-25 16:54:09,736 [WARN] ThirdParty:741 - waiting for thirdparty lock release [change project]
+2020-11-25 16:54:09,736 [INFO] ThirdParty:743 - entering critical section [change project]
+2020-11-25 16:54:09,736 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2020-11-25 16:54:09,736 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.0
+2020-11-25 16:54:09,736 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2020-11-25 16:54:09,736 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2020-11-25 16:54:09,737 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 2.0.0
+2020-11-25 16:54:09,737 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2020-11-25 16:54:09,737 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2020-11-25 16:54:09,737 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.1.1
+2020-11-25 16:54:09,737 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2020-11-25 16:54:09,737 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.1.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.1.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 2.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.15.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.2.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.1
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.0
+2020-11-25 16:54:09,738 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2020-11-25 16:54:09,739 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2020-11-25 16:54:09,739 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2020-11-25 16:54:09,739 [INFO] ThirdParty:749 - exiting critical section [change project]
+2020-11-25 16:54:09,802 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:54:09,803 [INFO] PinOutPanel:1418 - setPackage(STM32F103C8Tx,LQFP48)
+2020-11-25 16:54:10,018 [INFO] UtilMem:74 - Before build in PCC Used Memory: 747947352 Bytes (1073741824)
+2020-11-25 16:54:10,276 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:54:10,314 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:54:10,330 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:54:10,331 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:54:10,369 [INFO] UtilMem:74 - After build in PCC Used Memory: 788017616 Bytes (1073741824)
+2020-11-25 16:54:10,478 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,479 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,479 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,479 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,480 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,480 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,480 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,481 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,482 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,483 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,484 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,484 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,484 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,485 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,485 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,486 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,486 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,486 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,487 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,487 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,488 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,488 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,488 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,489 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,489 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,490 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,490 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:54:10,800 [INFO] OpenFileManager:294 - Restore cursor
+2020-11-25 16:54:26,719 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 915584704 Bytes (1073741824)
+2020-11-25 16:54:26,885 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 922924736 Bytes (1073741824)
+2020-11-25 16:54:29,163 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 561031248 Bytes (1073741824)
+2020-11-25 16:54:29,757 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SPI
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: ADC
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: DMA
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-11-25 16:54:29,758 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-11-25 16:54:29,760 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\
+2020-11-25 16:54:29,764 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-11-25 16:54:29,765 [INFO] Argument:280 - 	 sub Args: 
+2020-11-25 16:54:29,765 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Channel1
+2020-11-25 16:54:29,765 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Channel1
+2020-11-25 16:54:29,765 [INFO] Argument:278 - Argument : Initvalue: null
+2020-11-25 16:54:29,765 [INFO] Argument:280 - 	 sub Args: 
+2020-11-25 16:54:29,765 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-11-25 16:54:29,765 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-11-25 16:54:29,765 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-11-25 16:54:29,765 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-11-25 16:54:29,765 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-11-25 16:54:29,765 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-11-25 16:54:29,766 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-11-25 16:54:29,766 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-11-25 16:54:29,766 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2020-11-25 16:54:29,766 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-11-25 16:54:29,766 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : Statevalue: null
+2020-11-25 16:54:29,766 [INFO] Argument:288 - Argument : Statevalue: null
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-11-25 16:54:29,766 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-11-25 16:54:29,766 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-11-25 16:54:29,767 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-11-25 16:54:29,767 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-11-25 16:54:29,767 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-11-25 16:54:29,767 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-11-25 16:54:29,767 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-11-25 16:54:29,767 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-11-25 16:54:29,767 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-11-25 16:54:30,209 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\license.tmp_save
+2020-11-25 16:54:30,272 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\license.tmp
+2020-11-25 16:54:30,707 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\gpio.tmp_save
+2020-11-25 16:54:30,810 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\gpio.tmp
+2020-11-25 16:54:30,811 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-11-25 16:54:30,919 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_vars.tmp_save
+2020-11-25 16:54:30,970 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_vars.tmp
+2020-11-25 16:54:30,995 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_inc.tmp_save
+2020-11-25 16:54:31,048 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_inc.tmp
+2020-11-25 16:54:31,086 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_HalInit.tmp_save
+2020-11-25 16:54:31,184 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_HalInit.tmp
+2020-11-25 16:54:31,229 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_Msp.tmp_save
+2020-11-25 16:54:31,355 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\usb_Msp.tmp
+2020-11-25 16:54:31,537 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:54:31,541 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:54:31,623 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma.tmp_save
+2020-11-25 16:54:31,760 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma.tmp
+2020-11-25 16:54:31,796 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma_GV.tmp_save
+2020-11-25 16:54:31,880 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\dma_GV.tmp
+2020-11-25 16:54:31,881 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:54:31,883 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-11-25 16:54:31,888 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2020-11-25 16:54:31,947 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-11-25 16:54:32,046 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.c_save
+2020-11-25 16:54:32,175 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.c
+2020-11-25 16:54:32,267 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.h_save
+2020-11-25 16:54:32,397 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usb_device.h
+2020-11-25 16:54:32,523 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.h_save
+2020-11-25 16:54:32,646 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.h
+2020-11-25 16:54:32,684 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.c_save
+2020-11-25 16:54:32,858 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\Target\usbd_conf.c
+2020-11-25 16:54:32,945 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.h_save
+2020-11-25 16:54:33,095 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.h
+2020-11-25 16:54:33,230 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.c_save
+2020-11-25 16:54:33,413 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_desc.c
+2020-11-25 16:54:33,476 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.h_save
+2020-11-25 16:54:33,649 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.h
+2020-11-25 16:54:33,756 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.c_save
+2020-11-25 16:54:33,955 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\USB_DEVICE\App\usbd_cdc_if.c
+2020-11-25 16:54:34,044 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_it.c_save
+2020-11-25 16:54:34,198 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_it.c
+2020-11-25 16:54:34,222 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_it.h_save
+2020-11-25 16:54:34,282 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_it.h
+2020-11-25 16:54:34,327 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_hal_msp.c_save
+2020-11-25 16:54:34,629 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\stm32f1xx_hal_msp.c
+2020-11-25 16:54:34,663 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\system.tmp_save
+2020-11-25 16:54:34,736 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\MXTmpFiles\system.tmp
+2020-11-25 16:54:34,779 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_hal_conf.h_save
+2020-11-25 16:54:34,925 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\stm32f1xx_hal_conf.h
+2020-11-25 16:54:35,166 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-11-25 16:54:35,168 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-11-25 16:54:35,227 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\main.h_save
+2020-11-25 16:54:35,316 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Inc\main.h
+2020-11-25 16:54:35,348 [INFO] CodeEngine:188 - oldGeneratedFile, D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\main.c_save
+2020-11-25 16:54:35,572 [INFO] CodeEngine:206 - Generated code: D:\cytometr_firrmware-alpha\alpha_firmware\Core\Src\main.c
+2020-11-25 16:54:37,077 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 691mS.
+2020-11-25 16:54:37,089 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-11-25 16:54:37,529 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-11-25 16:54:37,673 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2020-11-25 16:54:37,717 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2020-11-25 16:54:39,719 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 2630mS.
+2020-11-25 16:54:39,720 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2020-11-25 16:54:39,724 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-11-25 16:55:00,651 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:55:00,653 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:55:00,657 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:55:00,659 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:55:00,662 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:55:00,664 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:55:04,234 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:55:04,234 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:55:04,234 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2020-11-25 16:55:04,234 [INFO] ThirdParty:777 - entering critical section [close project]
+2020-11-25 16:55:04,235 [INFO] ThirdParty:790 - exiting critical section [close project]
+2020-11-25 16:55:04,236 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:55:04,239 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 713579440 Bytes (1073741824)
+2020-11-25 16:55:04,240 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:55:04,240 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:55:04,240 [INFO] OpenFileManager:274 - Change cursor
+2020-11-25 16:55:04,250 [INFO] RulesReader:52 - Compatibility file has been processed (209 Rules)
+2020-11-25 16:55:05,431 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:55:05,432 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:55:05,432 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:55:05,432 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:55:05,432 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:55:05,432 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:55:05,440 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:55:05,440 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:55:05,440 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:55:05,452 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:55:05,453 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:55:05,453 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:55:05,453 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:55:05,454 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:55:05,454 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:55:05,454 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_Condition id : 1602484938489
+2020-11-25 16:55:05,454 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:55:05,454 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_HelloWorld_Condition id : 1602484938491
+2020-11-25 16:55:05,454 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:55:05,455 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:55:05,455 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:55:05,455 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:55:05,455 [WARN] ModelIntegratedComponent:188 - Missing modes for component 1602574019385
+2020-11-25 16:55:05,455 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:55:05,456 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:55:05,456 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:55:05,456 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:55:05,456 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:55:05,456 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:55:05,457 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:55:05,457 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:55:05,457 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:55:05,457 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.0.0: no header file found
+2020-11-25 16:55:05,457 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2020-11-25 16:55:05,458 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.1: no header file found
+2020-11-25 16:55:05,458 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.0.0: no header file found
+2020-11-25 16:55:05,560 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2020-11-25 16:55:05,560 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2020-11-25 16:55:05,561 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2020-11-25 16:55:05,561 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2020-11-25 16:55:05,561 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:55:05,561 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:55:05,561 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2020-11-25 16:55:05,561 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2020-11-25 16:55:05,561 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2020-11-25 16:55:05,562 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2020-11-25 16:55:05,828 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 645434640 Bytes (1073741824)
+2020-11-25 16:55:05,829 [WARN] ThirdParty:741 - waiting for thirdparty lock release [change project]
+2020-11-25 16:55:05,829 [INFO] ThirdParty:743 - entering critical section [change project]
+2020-11-25 16:55:05,829 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2020-11-25 16:55:05,830 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.0
+2020-11-25 16:55:05,830 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2020-11-25 16:55:05,830 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2020-11-25 16:55:05,830 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 2.0.0
+2020-11-25 16:55:05,831 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2020-11-25 16:55:05,831 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2020-11-25 16:55:05,831 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.1.1
+2020-11-25 16:55:05,831 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2020-11-25 16:55:05,831 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2020-11-25 16:55:05,832 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2020-11-25 16:55:05,832 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-11-25 16:55:05,832 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2020-11-25 16:55:05,832 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.1.0
+2020-11-25 16:55:05,832 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.0.0
+2020-11-25 16:55:05,832 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.1.0
+2020-11-25 16:55:05,833 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 2.0.0
+2020-11-25 16:55:05,833 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.0.0
+2020-11-25 16:55:05,833 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2020-11-25 16:55:05,833 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2020-11-25 16:55:05,834 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2020-11-25 16:55:05,834 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.15.0
+2020-11-25 16:55:05,834 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2020-11-25 16:55:05,834 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.2.0
+2020-11-25 16:55:05,835 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.1
+2020-11-25 16:55:05,835 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.0.0
+2020-11-25 16:55:05,835 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.0
+2020-11-25 16:55:05,835 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2020-11-25 16:55:05,836 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2020-11-25 16:55:05,836 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2020-11-25 16:55:05,836 [INFO] ThirdParty:749 - exiting critical section [change project]
+2020-11-25 16:55:05,939 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:55:05,940 [INFO] PinOutPanel:1418 - setPackage(STM32F103C8Tx,LQFP48)
+2020-11-25 16:55:06,200 [INFO] UtilMem:74 - Before build in PCC Used Memory: 567089264 Bytes (1073741824)
+2020-11-25 16:55:06,347 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:06,385 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:06,407 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:06,409 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:06,445 [INFO] UtilMem:74 - After build in PCC Used Memory: 607983728 Bytes (1073741824)
+2020-11-25 16:55:06,460 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,460 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,461 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,461 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,461 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,461 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,461 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,462 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,462 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,462 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,462 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,462 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,463 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,463 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,463 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,463 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,464 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,464 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,464 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,464 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,464 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,465 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,465 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,465 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,465 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,466 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,466 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:06,600 [INFO] OpenFileManager:294 - Restore cursor
+2020-11-25 16:55:25,143 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:55:25,144 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:55:25,147 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:55:25,149 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host sw-center.st.com
+2020-11-25 16:55:25,152 [ERROR] ServerAccessManage:1004 - Warning during Server Connexion :  Unknown host www.ebuc23.com
+2020-11-25 16:55:25,155 [INFO] MainUpdater:2268 - connection check result : 22
+2020-11-25 16:55:26,648 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:55:26,649 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:55:26,649 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2020-11-25 16:55:26,649 [INFO] ThirdParty:777 - entering critical section [close project]
+2020-11-25 16:55:26,649 [INFO] ThirdParty:790 - exiting critical section [close project]
+2020-11-25 16:55:26,650 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:55:26,652 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 834614192 Bytes (1073741824)
+2020-11-25 16:55:26,653 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-11-25 16:55:26,653 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-11-25 16:55:26,653 [INFO] OpenFileManager:274 - Change cursor
+2020-11-25 16:55:27,627 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:55:27,628 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:55:27,628 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.0: no header file found
+2020-11-25 16:55:27,628 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:55:27,628 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:55:27,628 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.2.0.0: no header file found
+2020-11-25 16:55:27,635 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:55:27,636 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:55:27,636 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.1.1: no header file found
+2020-11-25 16:55:27,645 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:55:27,645 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:55:27,646 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2020-11-25 16:55:27,646 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:55:27,646 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2020-11-25 16:55:27,646 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:55:27,646 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_Condition id : 1602484938489
+2020-11-25 16:55:27,646 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1602484938504]
+2020-11-25 16:55:27,646 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : GFX01M1_HelloWorld_Condition id : 1602484938491
+2020-11-25 16:55:27,647 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:55:27,647 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:55:27,647 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2020-11-25 16:55:27,647 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2020-11-25 16:55:27,647 [WARN] ModelIntegratedComponent:188 - Missing modes for component 1602574019385
+2020-11-25 16:55:27,648 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:55:27,648 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:55:27,648 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.0.0: no header file found
+2020-11-25 16:55:27,648 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:55:27,648 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:55:27,649 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.1.0: no header file found
+2020-11-25 16:55:27,649 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:55:27,649 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:55:27,649 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.2.0.0: no header file found
+2020-11-25 16:55:27,649 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.0.0: no header file found
+2020-11-25 16:55:27,650 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2020-11-25 16:55:27,650 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.1: no header file found
+2020-11-25 16:55:27,650 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.0.0: no header file found
+2020-11-25 16:55:27,733 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2020-11-25 16:55:27,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2020-11-25 16:55:27,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2020-11-25 16:55:27,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2020-11-25 16:55:27,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:55:27,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2020-11-25 16:55:27,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2020-11-25 16:55:27,734 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2020-11-25 16:55:27,735 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2020-11-25 16:55:27,735 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2020-11-25 16:55:27,908 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 653359216 Bytes (1073741824)
+2020-11-25 16:55:27,908 [WARN] ThirdParty:741 - waiting for thirdparty lock release [change project]
+2020-11-25 16:55:27,908 [INFO] ThirdParty:743 - entering critical section [change project]
+2020-11-25 16:55:27,908 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2020-11-25 16:55:27,908 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.0
+2020-11-25 16:55:27,908 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2020-11-25 16:55:27,908 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 2.0.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.1.1
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.1.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.0.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.1.0
+2020-11-25 16:55:27,909 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 2.0.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.0.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.15.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.2.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.1
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.0.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2020-11-25 16:55:27,910 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2020-11-25 16:55:27,911 [INFO] ThirdParty:749 - exiting critical section [change project]
+2020-11-25 16:55:27,960 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-11-25 16:55:27,961 [INFO] PinOutPanel:1418 - setPackage(STM32F103C8Tx,LQFP48)
+2020-11-25 16:55:28,137 [INFO] UtilMem:74 - Before build in PCC Used Memory: 555613144 Bytes (1073741824)
+2020-11-25 16:55:28,262 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:28,299 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:28,316 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:28,318 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Mikhail_Kalinichenko/.stm32cubemx/plugins/power
+2020-11-25 16:55:28,350 [INFO] UtilMem:74 - After build in PCC Used Memory: 596507608 Bytes (1073741824)
+2020-11-25 16:55:28,360 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,360 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,360 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,360 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,360 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,362 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,362 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,362 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,362 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,362 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,362 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,363 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,363 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,363 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,363 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,363 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,363 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,363 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,364 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-11-25 16:55:28,495 [INFO] OpenFileManager:294 - Restore cursor
+2020-11-27 17:09:15,621 [INFO] Activator:178 - 
+
+
+2020-11-27 17:09:15,667 [INFO] Activator:179 - !SESSION log4j initialized

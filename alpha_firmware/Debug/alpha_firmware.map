@@ -39,7 +39,7 @@ hadc1               0x30              Core/Src/main.o
 UserTxBufferFS      0x10              USB_DEVICE/App/usbd_cdc_if.o
 hdma_adc1           0x44              Core/Src/main.o
 hspi1               0x58              Core/Src/main.o
-Data_buffer         0xfa0             Core/Src/main.o
+Data_buffer         0x1f40            Core/Src/main.o
 hpcd_USB_FS         0x2ec             USB_DEVICE/Target/usbd_conf.o
 USBD_StrDesc        0x100             USB_DEVICE/App/usbd_desc.o
 
@@ -4806,7 +4806,7 @@ LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .igot.plt      0x0000000020000350        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
                 0x0000000020000350                . = ALIGN (0x4)
 
-.bss            0x0000000020000350     0x19dc load address 0x0000000008008f0c
+.bss            0x0000000020000350     0x297c load address 0x0000000008008f0c
                 0x0000000020000350                _sbss = .
                 0x0000000020000350                __bss_start__ = _sbss
  *(.bss)
@@ -4839,38 +4839,38 @@ LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  *fill*         0x000000002000037b        0x1 
  .bss.mem.7961  0x000000002000037c      0x220 USB_DEVICE/Target/usbd_conf.o
  *(COMMON)
- COMMON         0x000000002000059c     0x10bc Core/Src/main.o
+ COMMON         0x000000002000059c     0x205c Core/Src/main.o
                 0x000000002000059c                DMA_buffer
                 0x00000000200005ec                hadc1
                 0x000000002000061c                hdma_adc1
                 0x0000000020000660                hspi1
                 0x00000000200006b8                Data_buffer
- COMMON         0x0000000020001658        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                0x0000000020001658                uwTick
- COMMON         0x000000002000165c      0x2c4 USB_DEVICE/App/usb_device.o
-                0x000000002000165c                hUsbDeviceFS
- COMMON         0x0000000020001920       0x20 USB_DEVICE/App/usbd_cdc_if.o
-                0x0000000020001920                UserRxBufferFS
-                0x0000000020001930                UserTxBufferFS
- COMMON         0x0000000020001940      0x100 USB_DEVICE/App/usbd_desc.o
-                0x0000000020001940                USBD_StrDesc
- COMMON         0x0000000020001a40      0x2ec USB_DEVICE/Target/usbd_conf.o
-                0x0000000020001a40                hpcd_USB_FS
-                0x0000000020001d2c                . = ALIGN (0x4)
-                0x0000000020001d2c                _ebss = .
-                0x0000000020001d2c                __bss_end__ = _ebss
+ COMMON         0x00000000200025f8        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                0x00000000200025f8                uwTick
+ COMMON         0x00000000200025fc      0x2c4 USB_DEVICE/App/usb_device.o
+                0x00000000200025fc                hUsbDeviceFS
+ COMMON         0x00000000200028c0       0x20 USB_DEVICE/App/usbd_cdc_if.o
+                0x00000000200028c0                UserRxBufferFS
+                0x00000000200028d0                UserTxBufferFS
+ COMMON         0x00000000200028e0      0x100 USB_DEVICE/App/usbd_desc.o
+                0x00000000200028e0                USBD_StrDesc
+ COMMON         0x00000000200029e0      0x2ec USB_DEVICE/Target/usbd_conf.o
+                0x00000000200029e0                hpcd_USB_FS
+                0x0000000020002ccc                . = ALIGN (0x4)
+                0x0000000020002ccc                _ebss = .
+                0x0000000020002ccc                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020001d2c      0x604 load address 0x0000000008008f0c
-                0x0000000020001d30                . = ALIGN (0x8)
- *fill*         0x0000000020001d2c        0x4 
+                0x0000000020002ccc      0x604 load address 0x0000000008008f0c
+                0x0000000020002cd0                . = ALIGN (0x8)
+ *fill*         0x0000000020002ccc        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x0000000020001d30                PROVIDE (_end = .)
-                0x0000000020001f30                . = (. + _Min_Heap_Size)
- *fill*         0x0000000020001d30      0x200 
-                0x0000000020002330                . = (. + _Min_Stack_Size)
- *fill*         0x0000000020001f30      0x400 
-                0x0000000020002330                . = ALIGN (0x8)
+                0x0000000020002cd0                PROVIDE (_end = .)
+                0x0000000020002ed0                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020002cd0      0x200 
+                0x00000000200032d0                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020002ed0      0x400 
+                0x00000000200032d0                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
